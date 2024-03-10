@@ -7,6 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
+
+
 use App\Controllers\Pages;
 
 $routes->get('pages', [Pages::class, 'index']);

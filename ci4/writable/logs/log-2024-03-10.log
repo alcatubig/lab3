@@ -88,3 +88,36 @@ in APPPATH\Controllers\Home.php on line 10.
  5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
  6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-10 14:07:53 --> ErrorException: file_get_contents(visitor_count.txt): Failed to open stream: No such file or directory
+in APPPATH\Views\pages\home.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(visitor_count.txt): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\WEBPROGSS221\\lab3\\ci4\\app\\Views\\pages\\home.php', 4)
+ 2 APPPATH\Views\pages\home.php(4): file_get_contents('visitor_count.txt')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\WEBPROGSS221\\lab3\\ci4\\app\\Views\\pages\\home.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/home', [], true)
+ 6 APPPATH\Controllers\Pages.php(24): view('pages/home')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->view('home')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-10 14:11:46 --> ErrorException: file_get_contents(visitor_count.txt): Failed to open stream: No such file or directory
+in APPPATH\Views\pages\home.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(visitor_count.txt): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\WEBPROGSS221\\lab3\\ci4\\app\\Views\\pages\\home.php', 4)
+ 2 APPPATH\Views\pages\home.php(4): file_get_contents('visitor_count.txt')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\WEBPROGSS221\\lab3\\ci4\\app\\Views\\pages\\home.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/home', [], true)
+ 6 APPPATH\Controllers\Pages.php(24): view('pages/home')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->view('home')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-10 14:31:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "templates/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/header.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templates/header', [], true)
+ 3 APPPATH\Controllers\Pages.php(23): view('templates/header', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
